@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Bootstrap Blog Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i></i>Richy Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                    </li>
+                    <li class="nav-item bg-success">
+                        <a class="nav-link " href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="#posts">posts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold text-primary mb-3">Welcome to My Blog</h1>
+                    <p class="lead text-muted mb-4">Discover amazing stories, insights, and experiences shared through engaging blog posts. Join our community of readers and writers.</p>
+                    <a href="#posts" class="btn btn-primary btn-lg">Read Latest Posts</a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="fileimage.webp" alt="Blog Hero" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5" id="posts">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="mb-4 text-primary">Latest Posts</h2>
+                
+                <article class="blog-post mb-5">
+                    <div class="card shadow-sm">
+                        <img src="naija.webp" class="card-img-top" alt="Technology">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">Technology</span>
+                                <small class="text-muted">December 15, 2024</small>
+                            </div>
+                            <h3 class="card-title h4">The Future of Web Development</h3>
+                            <p class="card-text">Exploring the latest trends and technologies that are shaping the future of web development. From AI integration to progressive web apps, discover what's coming next.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post mb-5">
+                    <div class="card shadow-sm">
+                        <img src="premium_photo-1678935941664-b137b94a4c99.avif" class="card-img-top" alt="Design">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Design</span>
+                                <small class="text-muted">December 12, 2024</small>
+                            </div>
+                            <h3 class="card-title h4">Creating Beautiful User Interfaces</h3>
+                            <p class="card-text">Learn the principles of modern UI design and how to create interfaces that are both beautiful and functional. Tips and tricks from industry experts.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post mb-5">
+                    <div class="card shadow-sm">
+                        <img  class="card-img-top" alt="Productivity">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">Productivity</span>
+                                <small class="text-muted">December 10, 2024</small>
+                           
+                        </div>
+                    </div>
+                </article>
+
+                <nav aria-label="Blog pagination">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-user me-2"></i>About Kingsley</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Author" class="rounded-circle mb-3" width="100" height="100">
+                        <p>Hi! I'm a passionate writer and developer sharing my thoughts on technology, design, and life. Welcome to my corner of the internet!</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-tags me-2"></i>Categories</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <a href="#" class="text-decoration-none">Technology</a>
+                            <span class="badge bg-secondary"></span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <a href="#" class="text-decoration-none">Design</a>
+                            <span class="badge bg-secondary"></span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <a href="#" class="text-decoration-none">Productivity</a>
+                            <span class="badge bg-secondary"></span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <a href="#" class="text-decoration-none">Lifestyle</a>
+                            <span class="badge bg-secondary"></span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="text-decoration-none">Travel</a>
+                            <span class="badge bg-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-clock me-2"></i>Recent Posts</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <img src="IMG_E0027.JPG" "post" class="rounded me-3" width="60" height="60">
+                            <div>
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">The Future of Web Development</a></h6>
+                                <small class="text-muted">Dec 15, 2024</small>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Post" class="rounded me-3" width="60" height="60">
+                            <div>
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">Creating Beautiful User Interfaces</a></h6>
+                                <small class="text-muted">Dec 12, 2024</small>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Post" class="rounded me-3" width="60" height="60">
+                            <div>
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">10 Tips for Remote Work Success</a></h6>
+                                <small class="text-muted">Dec 10, 2024</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-envelope me-2"></i>Newsletter</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-3">Subscribe to get the latest posts delivered directly to your inbox.</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control bg-dark" placeholder="Enter your email">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-blog me-2"></i>My Blog</h5>
+                    <p class="mb-0">Sharing stories, insights, and experiences through engaging content.</p>
+                </div>
+             
+                    <p class="mb-0">&copy; 2024 My Blog. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
